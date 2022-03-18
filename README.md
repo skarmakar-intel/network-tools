@@ -1,7 +1,7 @@
 # network-tools
 Utilities for network device
 
-sock-family: This enumerates the list of interfaces available and uses Ethtool IOCTL to get link details
+sock-family: This enumerates the list of interfaces available and supported family using getifaddrs, then uses Ethtool IOCTL to get link details
 Following sample o/p, the system had 1 wired and 1 wireless card, with wired card linked at 1 G
 
 lo       AF_PACKET (17) 65609 
