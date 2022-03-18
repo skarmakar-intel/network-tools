@@ -38,7 +38,7 @@ int main(int argc, char const *argv[]) {
     ifaddr= ifaddr->ifa_next;
   } while (ifaddr->ifa_next != NULL);
 
-  // ethtool ioctls
+  // open a socket and send ethtool ioctls
   int fd, ictl;
   struct ifreq ifr;
   char  name[IFNAMSIZ] = "eno1";
